@@ -16,6 +16,9 @@ The goal was to explore key business questions, understand sales trends, identif
 - Hourly and Weekly Trends
 - Top 5 and Bottom 5 Bestselling Pizzas
 
+## 🔗 Tableau Dashboard
+You can view the interactive Tableau dashboard [here](https://public.tableau.com/views/PIZZASALESREPORT_17427436727800/BestWorstSellers?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link).
+
 ## 🎓 Source
 Practice project based on a YouTube tutorial by [Data Tutorials](https://www.youtube.com/@datatutorials1).
 
