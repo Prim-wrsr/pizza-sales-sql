@@ -1,23 +1,23 @@
 --Total Revenue
 SELECT SUM(total_price) AS Total_Revenue
-FROM pizza_sales
+FROM pizza_sales;
  
 --Average Order Value
 SELECT SUM(total_price) / COUNT(DISTINCT order_id) AS Avg_Order_Value
-FROM pizza_sales
+FROM pizza_sales;
  
 --Total Pizzas Sold
 SELECT SUM(quantity) AS Total_Pizza_Sold
-FROM pizza_sales
+FROM pizza_sales;
  
 --Total Orders
 SELECT COUNT(DISTINCT order_id) AS Total_orders
-FROM pizza_sales
+FROM pizza_sales;
  
 --Average Pizzas Per Order
 SELECT CAST(CAST(SUM(quantity) AS DECIMAL(10,2)) / 
 CAST(COUNT (DISTINCT order_id) AS DECIMAL(10,2)) AS DECIMAL(10,2)) AS Avg_Pizzas_Per_Order
-FROM pizza_sales
+FROM pizza_sales;
  
 
 -- Daily Trend for Total Pizzas Sold
@@ -25,7 +25,6 @@ SELECT DATENAME(DW, order_date) AS order_day,
 	   COUNT(DISTINCT order_id) AS total_orders
 FROM pizza_sales
 GROUP BY DATENAME(DW, order_date)
-Output:
 
 -- Hourly Trend for Total Pizzas Sold
 SELECT  DATEPART(HOUR, order_time) AS order_hour,
