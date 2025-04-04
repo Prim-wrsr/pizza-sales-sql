@@ -66,6 +66,7 @@ FROM pizza_sales
 WHERE MONTH(order_date) = 2
 GROUP BY pizza_category
 ORDER BY Total_Quantity_Sold DESC
+	
 --Top 5 Best Sellers by Revenue
 SELECT TOP 5 pizza_name,
 	   SUM(total_price) AS Total_Revenue
